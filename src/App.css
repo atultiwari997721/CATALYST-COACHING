@@ -1,0 +1,10 @@
+/* Base App CSS - Additional specific styles will be here if needed */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
