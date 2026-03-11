@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckSquare, Edit3, ClipboardList, Menu, X, LogOut, Users } from 'lucide-react';
+import { CheckSquare, Edit3, ClipboardList, FileSpreadsheet, FileCheck, Menu, X, LogOut, Users } from 'lucide-react';
+import ThemeToggle from '../components/ThemeToggle';
 import '../pages.css';
 
 const TeacherDashboard = () => {
@@ -58,9 +59,15 @@ const TeacherDashboard = () => {
               <Menu size={24} color="hsl(var(--text-main))" />
             </button>
             <div>
-              <h1 style={{fontSize: '1.5rem', lineHeight: 1.2}}>Teacher Dashboard</h1>
-              <p className="resource-meta">Batch: Class 10th Maths</p>
+              <h1 style={{fontSize: '1.5rem', lineHeight: 1.2}}>Teacher Portal</h1>
+              <p className="resource-meta">Welcome back, Mr. Sharma</p>
             </div>
+          </div>
+
+          <div className="user-profile-sm glass" style={{padding: '0.5rem', paddingRight: '1rem', borderRadius: 'var(--br-round)'}}>
+            <ThemeToggle />
+            <div className="avatar-sm ml-2">RS</div>
+            <span style={{fontWeight: 500, fontSize: '0.875rem'}}>R. Sharma</span>
           </div>
         </header>
 
