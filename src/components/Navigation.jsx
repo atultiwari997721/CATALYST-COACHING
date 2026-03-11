@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -38,6 +39,7 @@ const Navigation = () => {
         </div>
         
         <div className="nav-actions flex-center">
+          <ThemeToggle />
           <Link to="/login" className="btn btn-primary nav-btn desktop-only">Student Login</Link>
           <button className="hamburger-btn" onClick={toggleMenu} aria-label="Toggle Menu">
             <span className={`hamburger-line ${isMobileMenuOpen ? 'open-1' : ''}`}></span>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LayoutDashboard, Users, BookOpen, DollarSign, Menu, X, LogOut, TrendingUp } from 'lucide-react';
+import ThemeToggle from '../components/ThemeToggle';
 import '../pages.css';
 
 const AdminDashboard = () => {
@@ -54,6 +55,10 @@ const AdminDashboard = () => {
               <h1 style={{fontSize: '1.5rem', lineHeight: 1.2}}>Admin Dashboard</h1>
               <p className="resource-meta">Center Level Overview</p>
             </div>
+          </div>
+
+          <div className="user-profile-sm glass" style={{padding: '0.5rem', paddingRight: '1rem', borderRadius: 'var(--br-round)'}}>
+             <ThemeToggle className="mr-4" />
           </div>
         </header>
 

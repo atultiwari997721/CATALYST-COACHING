@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PlayCircle, FileText, BookOpen, Menu, X, LogOut, LayoutDashboard, Clock } from 'lucide-react';
+import ThemeToggle from '../components/ThemeToggle';
 import '../pages.css';
 
 const Dashboard = () => {
@@ -116,7 +117,8 @@ const Dashboard = () => {
           </div>
 
           <div className="user-profile-sm glass" style={{padding: '0.5rem', paddingRight: '1rem', borderRadius: 'var(--br-round)'}}>
-            <div className="avatar-sm">VD</div>
+            <ThemeToggle />
+            <div className="avatar-sm ml-2">VD</div>
             <span style={{fontWeight: 500, fontSize: '0.875rem'}}>Vikram D.</span>
           </div>
         </header>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LineChart, Calendar, Award, Menu, X, LogOut, FileText } from 'lucide-react';
+import ThemeToggle from '../components/ThemeToggle';
 import '../pages.css';
 
 const ParentDashboard = () => {
@@ -63,6 +64,10 @@ const ParentDashboard = () => {
               <h1 style={{fontSize: '1.5rem', lineHeight: 1.2}}>Parent Dashboard</h1>
               <p className="resource-meta">Monitoring: Vikram D. (Class 10)</p>
             </div>
+          </div>
+
+          <div className="user-profile-sm glass" style={{padding: '0.5rem', paddingRight: '1rem', borderRadius: 'var(--br-round)'}}>
+             <ThemeToggle />
           </div>
         </header>
 
